@@ -20,17 +20,17 @@ extern "C" {
 	extern "C"
 	{
 	typedef struct User {
-		char prename[50];
-		char surname[50];
-		char mail[100];
-		char phone[20];
-		char birthday[20];
-		char address[20];
+		char *prename;
+		char *surname;
+		char *mail;
+		char *phone;
+		char *birthday;
+		char *address;
 		int user_id;
 	} User;
 		
 		CREATIONALDLL_API int AddUser(User user);
-		CREATIONALDLL_API User getUserByMail(char mail[50]);
+		CREATIONALDLL_API User getUserByMail(char *mail);
 		CREATIONALDLL_API int changeUser(User user);
 		CREATIONALDLL_API int deleteUser(User user);
 	}

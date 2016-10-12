@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include "CreationalDll.h" 
-#include "newUser.h"
+#include "UserHandling.h"
+#include "AccountHandling.h"
 
 using namespace std;
 
