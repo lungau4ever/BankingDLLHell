@@ -1,9 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2012 for Windows Desktop
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MathFuncsDll", "MathFuncsDll\MathFuncsDll.vcxproj", "{B22FADBE-B0CD-4303-A374-CF1B0B4A1B72}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CreationalDll", "MathFuncsDll\MathFuncsDll.vcxproj", "{B22FADBE-B0CD-4303-A374-CF1B0B4A1B72}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyExecRefsDll", "MyExecRefsDll\MyExecRefsDll.vcxproj", "{56FB2551-0B58-45BE-BAE2-997C82A1D949}"
+	ProjectSection(ProjectDependencies) = postProject
+		{284A2C12-6DC6-4A1F-A517-65B91FE94961} = {284A2C12-6DC6-4A1F-A517-65B91FE94961}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AccountHandling", "AccountHandling\AccountHandling.vcxproj", "{284A2C12-6DC6-4A1F-A517-65B91FE94961}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +26,10 @@ Global
 		{56FB2551-0B58-45BE-BAE2-997C82A1D949}.Debug|Win32.Build.0 = Debug|Win32
 		{56FB2551-0B58-45BE-BAE2-997C82A1D949}.Release|Win32.ActiveCfg = Release|Win32
 		{56FB2551-0B58-45BE-BAE2-997C82A1D949}.Release|Win32.Build.0 = Release|Win32
+		{284A2C12-6DC6-4A1F-A517-65B91FE94961}.Debug|Win32.ActiveCfg = Debug|Win32
+		{284A2C12-6DC6-4A1F-A517-65B91FE94961}.Debug|Win32.Build.0 = Debug|Win32
+		{284A2C12-6DC6-4A1F-A517-65B91FE94961}.Release|Win32.ActiveCfg = Release|Win32
+		{284A2C12-6DC6-4A1F-A517-65B91FE94961}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -13,7 +13,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B22FADBE-B0CD-4303-A374-CF1B0B4A1B72}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>MathFuncsDll</RootNamespace>
+    <RootNamespace>CreationalDll</RootNamespace>
     <ProjectName>CreationalDll</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -85,13 +85,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CreationalDll.h" />
-    <ClInclude Include="csvparser.h" />
     <ClInclude Include="UserHandling.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="csvparser.c" />
     <ClCompile Include="dllmain.cpp">
       <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -106,7 +104,6 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="usage_example_with_header.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
